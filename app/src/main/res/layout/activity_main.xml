@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_result_ry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+        <include
+            layout="@layout/item_index"
+            android:visibility="gone" />
+        <com.project.citysearchedemo.view.SideLetterBar
+            android:id="@+id/side_letter_bar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/overlay_bg"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
